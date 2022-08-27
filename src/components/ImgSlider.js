@@ -38,6 +38,7 @@ ul li button {
   &:before {
     font-size:10px;
     color:rgb(150,158,171);
+    
   }
 }
 
