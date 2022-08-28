@@ -3,13 +3,28 @@ import { Counter } from './features/counter/Counter';
 import './App.css';
 import Header from './components/Header';
 import Home from './components/Home';
-
+import Details from './components/Details';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  useRouteMatch,
+  useParams,
+  Routes
+} from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Home />
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/detail" element={<Details />} />
+          <Route path='/' element={<Home />} />
+        </Routes>
+      </Router>
+
     </div>
   );
 }

@@ -68,7 +68,7 @@ function Viewers() {
 export default Viewers
 
 const Container = styled.div`
-  padding: 15px 10px;
+  padding: 15px 10px 0px 10px;
   margin-top: 30px;
   display:grid;
   grid-template-columns:repeat(5,minmax(0, 1fr));
