@@ -94,6 +94,7 @@ z-index:-1;
   height: calc((100vw + 3.5vw + 24px) / 4.61);
   width: 100vw;
   background-repeat: round;
+  z-index:0;
 
   img {
     position:absolute;
@@ -121,10 +122,11 @@ const Button = styled.button`
   position:absolute;
   top:16rem;
   left:12.5rem;
+  
 
   &:hover {
     transition: all 0.2s ease-in-out 0s;
-    background:#40424ada;
+    background:#464852;
   }
     
 `
